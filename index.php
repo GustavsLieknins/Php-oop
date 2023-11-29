@@ -1,6 +1,6 @@
 <?php
 
-include "Tire.php";
+include "Train.php";
 
 
 // $car1 = New Car("Bmw", 0);
@@ -13,7 +13,14 @@ include "Tire.php";
 ///////////////////////////////////////
 
 
-$tire = New Tire("R12", "Vissezonas", "Good");
-echo $tire->size;
-echo "<br>";
-echo $tire->type;
+// $tire = New Tire("R12", "Vissezonas", "Good");
+// echo $tire->size;
+// echo "<br>";
+// echo $tire->type;
+
+/////////
+
+$train = New Train("Opel zafira", "12cm", 1293364656835);
+$train1 = New Train("Lancia", "9cm", 12132);
+$train->increaseMileage(240);
+$train1->increaseMileage(240);
