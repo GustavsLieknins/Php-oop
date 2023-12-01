@@ -7,27 +7,15 @@
 // Izveido publisku metodi increaseMileage($amount), kas palielina nobraukumu par doto argumentu
 // Izveido divus klases Car objektus.
 // Vienam objektam izsauc metodi increaseMileage($amount), palielinot nobraukumu par 240 km.
-
-class Car
+include_once "Vehicle.php";
+class Car extends Vehicle
 {
-    public $brand;
-    public $mileage;
+
     static $describe = "Masinam ir cetras durvis bet retos gadijumos tas cigani aizmetina";
-
-    
-
     function __construct($brand = "", $mileage = 0)
     {
         $this->brand = $brand;
         $this->mileage = $mileage;
-    }
-    function __destruct()
-    {
-        echo $this->brand . " is dead at mileage " . $this->mileage . "Km" . "<br>";
-    }
-    function increaseMileage($amount)
-    {
-        $this->mileage = $this->mileage += $amount;
     }
     static function makeNoise() {
         return "Beep, Beep!";
