@@ -2,7 +2,9 @@
 
 include "Train.php";
 include "Car.php";
-// include "Vehicle.php";
+include "Dog.php";
+include "Cat.php";
+
 
 
 // $car1 = New Car("Bmw", 0);
@@ -22,11 +24,18 @@ include "Car.php";
 
 /////////
 
-$train = New Train("Opel zafira", "12cm", 1293364656835);
-$train1 = New Train("Lancia", "9cm", 12132);
+$train = New Train("Opel zafira", 12, 1293364656835);
+$train1 = New Train("Lancia", 9, 12132);
 $train->increaseMileage(240);
 $train1->increaseMileage(240);
 
-$myCar = new Car("bmw", 0.01);
-$myTrain = new Train("opel", 0.01, 0.01);
-// $myVehicle = new Vehicle();
+$myCar = new Car("Bmw", 0.01);
+$myTrain = new Train("Opel", 1000000, 0.01);
+
+
+$myDog = new Dog("Reksis", 6);
+$myCat1 = new Cat("Mincis", 2);
+$myCat2 = new Cat("Brincis", 3);
+
+echo "<br>" . Dog::payAttention();
+Cat::payAttention() . "<br>";

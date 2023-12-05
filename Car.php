@@ -12,11 +12,6 @@ class Car extends Vehicle
 {
 
     static $describe = "Masinam ir cetras durvis bet retos gadijumos tas cigani aizmetina";
-    function __construct($brand = "", $mileage = 0)
-    {
-        $this->brand = $brand;
-        $this->mileage = $mileage;
-    }
     static function makeNoise() {
         return "Beep, Beep!";
     }

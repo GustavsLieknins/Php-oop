@@ -4,9 +4,14 @@ abstract class Vehicle
 {
     public $brand;
     protected $mileage;
+    function __construct($brand = "", $mileage = 0)
+    {
+        $this->brand = $brand;
+        $this->mileage = $mileage;
+    }
     function __destruct()
     {
-        echo $this->brand . " is dead at mileage " . $this->getMileage() . "<br>";
+        echo $this->brand . " is dead at mileage " . $this->getMileage()  . "km ". "<br>";
     }
     function increaseMileage($amount)
     {
