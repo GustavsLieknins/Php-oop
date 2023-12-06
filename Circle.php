@@ -11,6 +11,6 @@ class Circle extends Rectangle
     }
     public function calculateArea()
     {
-        return $this->width * $this->$height;
+        return 3.14159265359 * $this->$height *($this->radius * $this->radius);
     }
 }
